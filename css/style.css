@@ -14,7 +14,7 @@
   padding-bottom: 6px;
   font-family: 'Roboto', sans-serif;
 }
-@media only screen and (max-width: 766px) {
+@media (max-width: 766px) {
   .main_h {
     padding-top: 25px;
   }
@@ -155,6 +155,67 @@ p {
   line-height: 2;
 }
 
+/* Begin Band member syling */ 
+.meetthebandimage {
+    background-image: url('/img/Oscreen.svg');
+    
+    width: 100%;
+    height: 1080px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container {
+  position: relative;
+  min-width: 26%;
+  max-width: 35%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .5s ease;
+  background-color: #DE4692;
+  border-radius: 300px;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-style: italic;
+}
+
+@media (max-width: 766px) {
+    .meetthebandimage {
+        flex-direction: column;
+        height: 77vh;
+    }
+}
+
+/* End band member styling */
 
 @-webkit-keyframes scroll {
   0% {
