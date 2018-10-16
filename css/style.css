@@ -216,6 +216,55 @@ p {
 }
 
 /* End band member styling */
+.tour {
+  background-image: url(/img/Artboard%201.svg);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.tour {
+    display: grid;
+    grid-template-areas: 
+        "buffer header header"
+        "buffer dates  location";
+    grid-template-columns: 24% 1fr 1fr;
+    grid-template-rows: 12rem 1fr;
+}
+
+.tourheader {
+    grid-area: header;
+    font-size: 80px;
+    font-family: 'Roboto', sans-serif;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.tourdates {
+    grid-area: dates;
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.tourvenue {
+    grid-area: location;
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.tour li {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+}
+
+/* End Tour */
+
+/* Begin Join */
+
+#join {
+
+}
+
+/* End Join */
 
 @-webkit-keyframes scroll {
   0% {

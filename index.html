@@ -2,165 +2,197 @@
 <html lang="en" >
 
 <head>
-  <meta charset="UTF-8">
-  <title>A G E N T  O R A N G E</title>
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link href='https://fonts.googleapis.com/css?family=Montserrat|Cardo' rel='stylesheet' type='text/css'>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
-  <script type="application/javascript" src="js/index.js"></script>
+<meta charset="UTF-8">
+<title>A G E N TO R A N G E</title>
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link href='https://fonts.googleapis.com/css?family=Montserrat|Cardo' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="application/javascript" src="js/index.js"></script>
 
 <style>
-    body {
-        margin: 0px 0px;
-        padding: 0px 0px;
-        
+body {
+margin: 0px 0px;
+padding: 0px 0px;
+
+}
+
+
+.topimage video {
+width: 100%;
+}
+
+.about {
+background-image: url(img/Artboard%202.svg);
+width: 100%;
+height: 100%;
+background-repeat: no-repeat;
+    margin-bottom: 200px;
+}
+
+
+.aboutcontent {
+width: 70%;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-gap: 30px;
+margin-left: 20%;
+margin-top: -50px;
+
+}
+
+.about p{
+font-size: .9vw;
+font-style: italic;
+}
+
+ 
+
+h2 {
+margin-left: 20%;
+font-size: 80px;
+font-family: 'Roboto', sans-serif;
+
+}
+    
+.meetthebandimage {
+  margin-top: -20%;
+}
+    
+.tourtext p{
+font-size: 3vw;
+font-style: italic;   
     }
 
+.stream {
+width: 100%;
+height: 1080px;
+background-repeat: no-repeat;
+}
+@media only screen and (max-width: 500px) {
+
+.heroimage {
+display: none;
+}
+
+.topimage {
+background-image:url(img/logo.svg);
+width: 100%;
+height: 500px;
+background-repeat: no-repeat;
+background-color: #DE4692
+}
     
-    .topimage video {
-        width: 100%;
-    }
-    
-    .about {
-        background-image: url(img/Artboard%202.svg);
-        width: 100%;
-        height: 100%;
-        background-repeat: no-repeat;
-    }
-    
-    .aboutcontent {
-        width: 70%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 30px;
-        margin-left: 20%;
-       
-        margin-top: -50px;
-        
-    }
-    
-    .about p{
-        font-size: 1.1vw;
-        font-style: italic;
-    }
-    
-    .aboutheader {
-         margin-left: 20%;
-        font-size: 80px;
-        font-family: 'Roboto', sans-serif;
-        
-    }
-    
-    .stream {
-        background-image: url(img/Artboard%201.svg);
-        width: 100%;
-        height: 1080px;
-        background-repeat: no-repeat;
-    }
-      @media only screen and (max-width: 500px) {
-        
-        .heroimage {
-            display: none;
-        }
-        
-        .topimage {
-            background-image:url(img/logo.svg);
-            width: 100%;
-            height: 500px;
-            background-repeat: no-repeat;
-            background-color: #DE4692
-        }
-        
-        
-    }
-    </style>
-  
+
+
+}
+</style>
+
 </head>
 <body>
 <header class="main_h">
 
-    <div class="row">
-        <a class="logo" href="#"><img src="img/logo.svg" alt="agent orange logo"></a>
+<div class="row">
+<a class="logo" href="#"><img src="img/logo.svg" alt="agent orange logo"></a>
 
-        <div class="mobile-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+<div class="mobile-toggle">
+<span></span>
+<span></span>
+<span></span>
+</div>
 
-        <nav>
-            <ul>
-                <li><a href="#about">about</a></li>
-                <li><a href="#members">meet the band</a></li>
-                <li><a href="#tour">tour dates</a></li>
-                <li><a href="#stream">stream</a></li>
-                <li><a href="#join">join</a></li>
-                
-            </ul>
-        </nav>
+<nav>
+<ul>
+<li><a href=".sec01">about</a></li>
+<li><a href=".sec02">meet the band</a></li>
+<li><a href=".sec03">tour dates</a></li>
+<li><a href=".sec04">stream</a></li>
+<li><a href=".sec05">join</a></li>
 
-    </div> <!-- / row -->
+</ul>
+</nav>
+
+</div> <!-- / row -->
 
 </header>
 
 <div class="topimage">
     <div class="heroimage">
         <video autoplay muted loop id="myVideo">
-          <source src="video/animation.mov" type="video/mp4"/>
-          Your browser does not support HTML5 video.
+            <source src="video/animation.mov" type="video/mp4"/>
+            Your browser does not support HTML5 video.
         </video>
     </div>
 </div>
 
 <div class="content">
-    
-    <div id="about" class="about">
-        <h2 class="aboutheader">about</h2>
-            <div class="aboutcontent">
+    <div class="about">
+    <h2 class="sec01">about</h2>
+    <div class="aboutcontent">
+        <div class="aboutimage"> <img src="img/agent%20orange.jpg" width="100%"></div>
+        <div class="abouttext"> 
+            <p>The Original Southern California Punk/Surf Power Trio, Agent Orange, is one of only a handful of bands who have been continually active since the earliest days of the West Coast Punk Scene.</p>
+            <p>A small circle of musical rebels who came together to form a movement, they took their place front and center to experience and participate in the explosion of now legendary underground music that was created during the golden era of American Punk Rock.</p>
+            <p>Being the first to combine the melodic California surf guitar sound with the frantic energy of punk, Agent Orange invented the formula that would come to define the Orange County punk sound. Highly influential to many of the bands who have followed in their path, Agent Orange have al- ways stayed one step ahead.</p>
+            <p>Their strong connection to the Action Sports world has resulted in their music providing the soundtrack to numerous major motion pictures, video games, surf and skate films, television, and live sports events.</p>
+            <p>The last of the true independents, Agent Orange have managed to stay true to their roots, while always moving forward. Powered by a loyal following built up through years of explosive live performances all over the world, Agent Orange continue to deliver their Fullblown-Super- charged-Punk-Surf Sound on an international basis, with a never ending schedule of tours in the United States, Canada, South America, Europe, Australia, and Japan.</p>
+        </div>
+    </div>
+    </div> 
+    <!--end about-->
 
-            <div class="aboutimage"> <img src="img/agent%20orange.jpg" width="100%"></div>
-            <div class="abouttext"> 
-            <p>The Original Southern California Punk/Surf Power Trio, Agent Orange, is one of only a handful of bands who have been continually active since the earliest days of the West Coast Punk Scene.
-            A small circle of musical rebels who came together to form a movement, they took their place front and center to experience and participate in the explosion of now legendary underground music that was created during the golden era of American Punk Rock.
-            Being the first to combine the melodic California surf guitar sound with the frantic energy of punk, Agent Orange invented the formula that would come to define the Orange County punk sound. Highly influential to many of the bands who have followed in their path, Agent Orange have al- ways stayed one step ahead.
-            Their strong connection to the Action Sports world has resulted in their music providing the soundtrack to numerous major motion pictures, video games, surf and skate films, television, and live sports events.
-            The last of the true independents, Agent Orange have managed to stay true to their roots, while always moving forward. Powered by a loyal following built up through years of explosive live performances all over the world, Agent Orange continue to deliver their Fullblown-Super- charged-Punk-Surf Sound on an international basis, with a never ending schedule of tours in the United States, Canada, South America, Europe, Australia, and Japan.</p></div>
-        </div>
-    </div>
-    
-    <div id="members" class="members">
-    <h2 class="bandmembersheader">meet the band</h2>
-    <div class="meetthebandimage">
-        <div class="container">
-            <img src="img/steve.png" alt="Steve Moto" class="image portrait">
-            <div class="overlay">
+    <h2 class="sec02">meet the band</h2>
+    <div class="members">
+        
+        <div class="meetthebandimage">
+            <div class="container">
+                <img src="img/steve.png" alt="Steve Moto" class="image portrait">
+                <div class="overlay">
                 <p class="text">steve soto</p>
+                </div>
             </div>
-        </div>
-        <div class="container">
-            <img src="img/steve.png" alt="Steve Moto" class="image portrait">
-            <div class="overlay">
-                <p class="text">steve soto</p>
+            <div class="container">
+                <img src="img/Mike.png" alt="Mike Palm" class="image portrait">
+                <div class="overlay">
+                <p class="text">mike palm</p>
+                </div>
             </div>
-        </div>
-        <div class="container">
-            <img src="img/steve.png" alt="Steve Moto" class="image portrait">
-            <div class="overlay">
-                <p class="text">steve soto</p>
+            <div class="container">
+                <img src="img/guy.png" alt="Scott Miller" class="image portrait">
+                <div class="overlay">
+                <p class="text">scott miller</p>
+                </div>
             </div>
         </div>
     </div>
-    
-     <h1 id="tour" class="sec03">tour dates</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, recusandae, at, labore velit eligendi amet nobis repellat natus sequi sint consectetur excepturi doloribus vero provident consequuntur accusamus quisquam nesciunt cupiditate soluta alias illo et deleniti voluptates facilis repudiandae similique dolore quaerat architecto perspiciatis officiis dolor ullam expedita suscipit neque minima rem praesentium inventore ab officia quos dignissimos esse quam placeat iste porro eius! Minus, aspernatur nesciunt consectetur. Sit, eius, itaque, porro, beatae impedit officia tenetur reiciendis autem vitae a quae ipsam repudiandae odio dolorum quaerat asperiores possimus corporis optio animi quisquam laboriosam nihil quam voluptatum quidem veritatis iste culpa iure modi perspiciatis recusandae ipsa libero officiis aliquam doloremque similique id quasi atque distinctio enim sapiente ratione in quia eum perferendis earum blanditiis. Nobis, architecto, veniam molestias minus iste necessitatibus est ab in earum ratione eveniet soluta molestiae sed illo nostrum nemo debitis. Minus, quod totam aliquam ea asperiores fugit quaerat excepturi dolores ratione numquam consequatur id unde alias provident vero incidunt exercitationem similique consequuntur hic possimus? Fuga, eveniet quaerat inventore corporis laborum eligendi enim soluta obcaecati aliquid veritatis provident amet laudantium est quisquam dolore exercitationem modi? Distinctio, pariatur, ab velit praesentium vitae quidem consequatur deleniti recusandae odit officiis. Quidem, cupiditate.</p>
-    
-    <h1 id="stream">stream</h1>
-    
-    <div class="meetthebandimage"> <img src="img/website.gif" width="50%"></div>
-    <h1 id="join" class="sec05">join</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, recusandae, at, labore velit eligendi amet nobis repellat natus sequi sint consectetur excepturi doloribus vero provident consequuntur accusamus quisquam nesciunt cupiditate soluta alias illo et deleniti voluptates facilis repudiandae similique dolore quaerat architecto perspiciatis officiis dolor ullam expedita suscipit neque minima rem praesentium inventore ab officia quos dignissimos esse quam placeat iste porro eius! Minus, aspernatur nesciunt consectetur. Sit, eius, itaque, porro, beatae impedit officia tenetur reiciendis autem vitae a quae ipsam repudiandae odio dolorum quaerat asperiores possimus corporis optio animi quisquam laboriosam nihil quam voluptatum quidem veritatis iste culpa iure modi perspiciatis recusandae ipsa libero officiis aliquam doloremque similique id quasi atque distinctio enim sapiente ratione in quia eum perferendis earum blanditiis. Nobis, architecto, veniam molestias minus iste necessitatibus est ab in earum ratione eveniet soluta molestiae sed illo nostrum nemo debitis. Minus, quod totam aliquam ea asperiores fugit quaerat excepturi dolores ratione numquam consequatur id unde alias provident vero incidunt exercitationem similique consequuntur hic possimus? Fuga, eveniet quaerat inventore corporis laborum eligendi enim soluta obcaecati aliquid veritatis provident amet laudantium est quisquam dolore exercitationem modi? Distinctio, pariatur, ab velit praesentium vitae quidem consequatur deleniti recusandae odit officiis. Quidem, cupiditate.</p>
+    <!--end members-->
+
+
+    <div class="tour">
+        <h1 id="tour" class="tourheader">tour dates</h1>
+        <ul class="tourtext"> 
+            <li>MARCH 02<br>Birmingham, AL</li>
+            <li>OCT 07<br>San Jose, CA</li>
+            <li>OCT 23<br>San Fransisco, CA</li>
+            <li>NOV 05<br>Reno, NV</li>
+            <li>NOV 18<br>Las Vegas, NV</li>
+        </ul>
+        </div>
+<!-- End Tour-->
+
+    <div id="stream"><h1>stream</h1></div>
+        <div class="streamimage"> <img src="img/website.gif" width="50%"></div>
+
+    <div id="join">
+        <div class="joinimage"> <img src="img/Artboard%203.svg" width="100%"></div>
+        <h1 class="sec05">join</h1>
+        <p></p>
+    </div>
+    <!-- End join-->
 </div>
+    
+    <script src="js/index.js"></script>
+<!-- END CONTENT -->
 </body>
 </html>
